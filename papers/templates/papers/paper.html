@@ -1,0 +1,14 @@
+<h2> Hello here </h2>
+
+
+{% for paper in all_papers %}
+
+  <l>   name:  {{ paper.name}} </li>
+   date_created:  {{ paper.date_created}}
+   category:  {{ paper.category}}
+    <a href="{{ paper.file_path.url }}" target="_blank"> {{ paper.name }} </a>
+    
+    
+    
+
+{% endfor %}
